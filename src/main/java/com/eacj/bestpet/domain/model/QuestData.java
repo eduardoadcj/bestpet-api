@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 
 @Entity
@@ -15,21 +17,33 @@ public class QuestData {
     private Long id;
     
     @NotNull
+    @Max(value = 2)
+    @Min(value = 0)
     private int a;
     
     @NotNull
+    @Max(value = 2)
+    @Min(value = 0)
     private int b;
     
     @NotNull
+    @Max(value = 2)
+    @Min(value = 0)
     private int c;
     
     @NotNull
+    @Max(value = 2)
+    @Min(value = 0)
     private int d;
     
     @NotNull
+    @Max(value = 2)
+    @Min(value = 0)
     private int e;
     
     @NotNull
+    @Max(value = 2)
+    @Min(value = 0)
     private int f;
     
     @NotNull
