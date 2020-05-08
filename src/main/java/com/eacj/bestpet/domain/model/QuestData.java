@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
 
 @Entity
 public class QuestData {
@@ -13,12 +14,25 @@ public class QuestData {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
     
+    @NotNull
     private int a;
+    
+    @NotNull
     private int b;
+    
+    @NotNull
     private int c;
+    
+    @NotNull
     private int d;
+    
+    @NotNull
     private int e;
+    
+    @NotNull
     private int f;
+    
+    @NotNull
     private int animal;
 
     public Long getId() {
